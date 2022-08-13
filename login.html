@@ -19,29 +19,23 @@
 
 <body class="text-center">
   <main class="form">
-<form>
+
 
   <img src="/img/login.png" width="30%">
   <h1 class="h2"> Iniciar sesión </h1> <br> 
   <div class="container">
-    <label> Correo electrónico </label> <br>
-    <input type="email" id="email">
+    <label for="usuario"> Usuario <br> <input type="email" id="usuario" placeholder="correo electrónico"> </label> <br>
+    
   </div>
   <div class="container">
-    <label> Constraseña </label> <br>
-    <input type="password" id="password">
-  </div>
-  <div class="container">
-   <input type="checkbox" id="recordar"> <label> Recordar mi usuario  </label> 
+    <label for="contrasena"> Constraseña <br> <input type="password" id="contrasena" placeholder="contraseña"> </label> <br>
   </div> <br>
 
+
   <div> 
-    <button type="submit"id="botonlogin"> Ingresar </button>
+    <button type="submit" id="ingresar"> Ingresar </button>
   </div>
 
-
-
-</form>
   </main>
   <footer class="text-muted">
     <div class="container">
@@ -53,7 +47,7 @@
       <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
     </div>
   </footer>
-  <script src="js/login.js"></script>
+  
 </body>
 
 </html>
