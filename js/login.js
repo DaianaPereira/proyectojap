@@ -4,7 +4,7 @@ function login() {
 
     if (usuario ==="" || contrasena ==="") {
 
-    alert("Debe ingresar usuario y contraseña")    
+    alert("Debe ingresar usuario y contraseña");    
 
     } else {
         localStorage.setItem('usuario',usuario);
