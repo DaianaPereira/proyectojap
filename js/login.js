@@ -8,7 +8,6 @@ function login() {
 
     } else {
         localStorage.setItem('usuario',usuario);
-        localStorage.setItem('contrasena',contrasena)
         location.href= 'index.html';
     }
 }

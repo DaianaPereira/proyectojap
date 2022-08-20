@@ -1,3 +1,23 @@
+document.addEventListener("DOMContentLoaded", ()=>{
+    let user = localStorage.getItem('usuario');
+    
+    if (user == null) {
+      alert("Para continuar debe ingresar al sitio con su usuario y contraseña");
+      location.href= 'login.html';
+    } else {
+      document.getElementById('usuario').innerHTML = user;
+    };
+      
+    })
+
+document.getElementById('cerrar').addEventListener("click", ()=> {
+    alert("Cerrando sesión");
+    localStorage.clear();
+    location.href= 'index.html';
+})
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     document.getElementById("autos").addEventListener("click", function() {
         localStorage.setItem("catID", 101);
